@@ -1,0 +1,21 @@
+body {
+  background: #454372;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  display: block;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form label {
+  display: block;
+}

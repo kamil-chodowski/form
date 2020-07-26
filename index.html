@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formularz</title>
+  </head>
+  <body>
+    <main>
+      <h1>Forms playground</h1>
+      <form class="form" action="">
+        <p>
+          <label for="firstName">Your name:</label>
+          <input
+            class="form__input"
+            id="firstName"
+            name="firstName"
+            type="text"
+            placeholder="Please eneter your name"
+          />
+        </p>
+        <p>
+          <label for="lastName">Your last name:</label>
+          <input
+            class="form__input"
+            id="lastName"
+            name="lastName"
+            type="text"
+            placeholder="Please enter your last name"
+          />
+        </p>
+        <p>
+          <label for="email">Your e-mail:</label>
+          <input
+            class="form__input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Please eneter your email adress"
+          />
+        </p>
+        <p>
+          <label for="phoneNumber">Your phone number:</label>
+          <input
+            class="form__input"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="number"
+            placeholder="Please eneter your phone number"
+          />
+        </p>
+        <fieldset>
+          <legend>Adress</legend>
+          <p>
+            <label for="streetName">Street name:</label>
+            <input
+              class="form__input"
+              id="streetName"
+              name="streetName"
+              type="text"
+              placeholder="Please eneter your street name"
+            />
+          </p>
+          <p>
+            <label for="city">City:</label>
+            <input
+              class="form__input"
+              id="city"
+              name="city"
+              type="text"
+              placeholder="Please eneter your city"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Favourite ice cream flavour</legend>
+          <p>
+            <label
+              ><input
+                name="iceCream"
+                type="radio"
+                value="saltedCaramel"
+              />Salted Caramel</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                name="iceCream"
+                type="radio"
+                value="chocolate"
+              />Chocolate</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                name="iceCream"
+                type="radio"
+                value="strawberryCheesecake"
+                checked
+              />Strawberry Cheesecake</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                name="iceCream"
+                type="radio"
+                value="vanilla"
+              />Vanilla</label
+            >
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="creditCard">Your credit card number:</label>
+          <input
+            class="form__input"
+            id="creditCard"
+            name="creditCard"
+            type="number"
+            placeholder="Please eneter your credit card number"
+          />
+        </p>
+        <p>
+          <label for="range">Range:</label>
+          <input
+            class="form__input"
+            id="range"
+            name="range"
+            type="range"
+            min="0"
+            max="100"
+            step="10"
+          />
+        </p>
+        <p>
+          <label for="password">Your password:</label>
+          <input
+            class="form__input"
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Please eneter your password"
+          />
+        </p>
+        <p>
+          <label for="avatar">Avatar:</label>
+          <input class="form__input" id="avatar" name="avatar" type="file" />
+        </p>
+        <p>
+          <label for="band">Pick one band:</label>
+          <select name="band" id="band">
+            <option value="band-1">Radiohead</option>
+            <option value="band-2">Metallica</option>
+            <option value="band-3">Nirvana</option>
+          </select>
+        </p>
+        <p>
+          <label for="yourStory">Your story:</label>
+          <textarea name="yourStory" id="yourStory">My story is...</textarea>
+        </p>
+        <p>
+          <label
+            ><input type="checkbox" name="agreement" value="agree" checked />I
+            agre</label
+          >
+        </p>
+        <p>
+          <input type="submit" value="Send" />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
